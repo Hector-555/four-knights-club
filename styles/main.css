@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap");
+
+@import url('header.css');
+@import url('sect-1.css');
+@import url('sect-2.css');
+@import url('sect-3.css');
+@import url('footer.css');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  color: #313131;
+}
+
+.main-container {
+  max-width: 192rem;
+  margin: 0 auto;
+  background: url(../img/bgr-font-1920.png) no-repeat;
+}
+
+.main {
+  margin-left: 7.2rem;
+  margin-right: 7.2rem;
+}
+
+/* -------- UI -------- */
+.running-line {
+  background-color: #f54932;
+  color: #fff;
+  height: 6rem;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  overflow-x: hidden;
+}
+
+.running-line__text {
+  white-space: nowrap;
+  margin-top: 1.6rem;
+}
+
+.carousel {
+  font-family: "Golos Text", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15.1rem;
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.carousel__btn {
+  width: 4.4rem;
+  height: 4.4rem;
+  background-color: #313131;
+  color: #fff;
+  font-size: 2.5rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.carousel__btn:hover {
+  background: #fbce51;
+}
+
+.carousel__btn:disabled {
+  background: #d6d6d6;
+}
+
+.carousel__btn img {
+  width: 25%;
+}
+
+.pagination {
+  display: none;
+}
+
+
+/* -------------------------------- 1440px -------------------------------- */
+@media (max-width: 1441px) {
+  .main-container {
+    max-width: 136.6rem;
+    background: none;
+  }
+}
+
+/* -------------------------------- 1024px -------------------------------- */
+@media (max-width: 1025px) {
+  html {
+    font-size: 48%;
+  }
+}
+
+/* -------------------------------- 768px -------------------------------- */
+@media (max-width: 769px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+/* -------------------------------- 425px -------------------------------- */
+@media (max-width: 426px) {
+  html {
+    font-size: 70.83%;
+  }
+
+  .main {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .pagination {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    width: 17.8rem;
+    margin-left: 8rem;
+  }
+
+  .dot-container {
+    width: 7.4rem;
+    display: flex;
+    gap: 0.6rem;
+  }
+
+  .dot {
+    background-color: #d9d9d9;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+
+  .dot-active {
+    background-color: #000;
+  }
+
+  .carousel {
+    position: absolute;
+    left: 10.3rem;
+    bottom: -8rem;
+    justify-content: normal;
+    gap: 0.8rem;
+  }
+
+  .carousel__btn {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+}
+
+/* -------------------------------- 375px -------------------------------- */
+@media (max-width: 376px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .running-line {
+    height: 3.8rem;
+    font-size: 1.6rem;
+  }
+
+  .running-line__text {
+    margin-top: 1rem;
+  }
+}
+
+/* -------------------------------- 320px -------------------------------- */
+@media (max-width: 321px) {
+  html {
+    font-size: 53.33%;
+  }
+
+  .carousel {
+    left: 9.3rem;
+  }
+}

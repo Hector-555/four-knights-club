@@ -1,0 +1,48 @@
+.footer {
+  font-family: "Golos Text", sans-serif;
+  background-color: #e9ded4;
+  color: #313131;
+  width: 136.6rem;
+  margin: 0 auto;
+  padding: 4rem 7rem 7.2rem 7.2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.footer-text {
+  line-height: 120%;
+  letter-spacing: -0.1px;
+}
+
+
+/* -------------------------------- 1440px -------------------------------- */
+@media (max-width: 1441px) {
+  .footer  {
+    width: 100%;
+  }
+}
+
+/* -------------------------------- 768px -------------------------------- */
+@media (max-width: 769px) {
+  .footer-text {
+    text-align: center;
+  }
+}
+
+/* -------------------------------- 425px -------------------------------- */
+@media (max-width: 426px) {
+  .footer {
+    padding: 4rem 0 6rem 2rem;
+  }
+
+  .footer-text {
+    text-align: left;
+  }
+}
+
+/* -------------------------------- 320px -------------------------------- */
+@media (max-width: 321px) {
+  .footer {
+    padding: 4rem 2rem 6rem;
+  }
+}

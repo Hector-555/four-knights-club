@@ -1,0 +1,229 @@
+.stages {
+  width: 132rem;
+  margin: 0 auto;
+  margin-bottom: 20rem;
+  position: relative;
+}
+
+.stages-title-container {
+  width: 80.6rem;
+  position: relative;
+  margin-bottom: 5.4rem;
+}
+
+.stages-title-container h2 {
+  font-size: 5.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 120%;
+}
+
+.stages-title-container p {
+  color: #3057a2;
+  font-family: "Golos Text", sans-serif;
+  font-size: 2rem;
+  width: 27.5rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 30rem;
+}
+
+.stages-points {
+  display: grid;
+  grid-template-columns: repeat(3, 39.4rem);
+  grid-template-rows: 112px 112px 136px;
+  gap: 2rem;
+}
+
+.stages-points__item {
+  background-color: #e9ded4;
+  color: #313131;
+  display: flex;
+  padding: 2rem;
+  gap: 1.6rem;
+  font-family: "Golos Text", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.stages-points__item-num {
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  padding-top: 0.7rem;
+}
+
+.stages-points__item-text {
+  width: 30.2rem;
+  padding-right: 0.2rem;
+}
+
+.stages-points_block-1 {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  display: flex;
+  gap: 2rem;
+}
+
+.stages-points_block-2 {
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+
+.stages-points_block-3 {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  display: flex;
+  gap: 2rem;
+}
+
+.stages-points_block-5 {
+  grid-column: 2/4;
+}
+
+.stages-points_block-1 .stages-points__item,
+.stages-points_block-3 .stages-points__item {
+  width: 50%;
+}
+
+.stages-points_block-5 .stages-points__item-text {
+  width: 44.6rem;
+}
+
+.stages-img-wrapper {
+  width: 39.4rem;
+  position: absolute;
+  right: -7.1rem;
+  bottom: -0.2rem;
+  overflow-x: hidden;
+}
+
+/* -------------------------------- 1440px -------------------------------- */
+@media (max-width: 1441px) {
+  .stages {
+    width: auto;
+  }
+}
+
+/* -------------------------------- 1024px -------------------------------- */
+@media (max-width: 1025px) {
+  .stages {
+    margin-bottom: 12rem;
+  }
+
+  .stages-points__item {
+    padding: 1.2rem;
+  }
+
+  .stages-title-container {
+    margin-bottom: 4rem;
+  }
+
+  .stages-img-wrapper {
+    bottom: 8rem;
+  }
+}
+
+/* -------------------------------- 768px -------------------------------- */
+@media (max-width: 769px) {
+  .stages-points {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .stages-points__item {
+    padding: 1.5rem;
+  }
+
+  .stages-points__item-text {
+    width: 24.5rem;
+  }
+
+  .stages-img-wrapper {
+    bottom: 13rem;
+    right: -5rem;
+  }
+}
+
+/* -------------------------------- 425px -------------------------------- */
+@media (max-width: 426px) {
+  .stages-title-container {
+    width: 100%;
+    margin-bottom: 14.8rem;
+  }
+
+  .stages-title-container h2 {
+    font-size: 3.6rem;
+    line-height: 110%;
+    margin-bottom: 1.3rem;
+  }
+
+  .stages-title-container p {
+    position: static;
+    font-size: 1.8rem;
+    width: 100%;
+  }
+
+  .stages-points {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    overflow-x: hidden;
+    margin-bottom: 2.8rem;
+  }
+
+  .stages-points_block-1,
+  .stages-points_block-2,
+  .stages-points_block-3,
+  .stages-points_block-4,
+  .stages-points_block-5 {
+    position: absolute;
+    width: 33.5rem;
+    height: 30rem;
+    overflow: hidden;
+    transition: all 0.5s;
+  }
+
+  .stages-points_block-1 {
+    flex-direction: column;
+    gap: 0;
+  }
+  .stages-points_block-3 {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .stages-points__item {
+    padding: 6.2rem 2rem 0;
+    font-size: 1.8rem;
+    width: 100%;
+  }
+
+  .stages-points_block-1 .stages-points__item,
+  .stages-points_block-3 .stages-points__item {
+    width: 100%;
+  }
+
+  .stages-points_block-1 .stages-points__item:last-child {
+    padding-top: 2.8rem;
+    padding-bottom: 3.6rem;
+  }
+
+  .stages-points_block-3 .stages-points__item:last-child {
+    padding-top: 2.8rem;
+    padding-bottom: 10.2rem;
+  }
+
+  .stages-points_block-5 .stages-points__item-text {
+    width: 27.8rem;
+  }
+
+  .stages-img-wrapper {
+    width: 35rem;
+    left: 0;
+    bottom: 30.7rem;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,273 @@
+.about {
+  width: 132rem;
+  margin: 0 auto;
+  padding-top: 8rem;
+  margin-bottom: 19rem;
+}
+
+.about__descr {
+  display: flex;
+  gap: 6.4rem;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.about__text,
+.about-price__text {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  color: #313131;
+  margin-bottom: 4.4rem;
+  line-height: 135%;
+}
+
+.about__text {
+  padding-top: 2rem;
+}
+
+.about-price__text {
+  padding-top: 3rem;
+}
+
+.about__text span,
+.about-price__text span {
+  color: #f54932;
+  font-weight: bold;
+}
+
+.about__text-mobile {
+  display: none;
+}
+
+.about__descr-img {
+  border-radius: 50%;
+  height: 25rem;
+  margin-right: -1.3rem;
+  margin-bottom: 3rem;
+}
+
+.about-price {
+  display: flex;
+  margin-left: -2.3rem;
+}
+
+.about-price__img {
+  margin-left: -0.4rem;
+}
+
+.about-price__descr {
+  padding-left: 1.3rem;
+}
+
+.about-table {
+  display: flex;
+  flex-direction: column;
+  font-family: "Golos Text", sans-serif;
+  color: #313131;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  width: 100%;
+}
+
+.about-table__item {
+  display: flex;
+  border-bottom: 2px solid #d0d0d0;
+}
+
+.about-table__item:last-child {
+  border-bottom: none;
+}
+
+.about-table__title {
+  width: 31rem;
+  height: 5.6rem;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+  border-right: 2px solid #d0d0d0;
+  line-height: 120%;
+}
+
+.display-375 {
+  display: none;
+}
+
+.about-table__text {
+  font-weight: 600;
+  width: 38rem;
+  height: 5.6rem;
+  padding-left: 1.6rem;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+  line-height: 120%;
+}
+
+.about-table__title:last-child,
+.about-table__text:last-child {
+  border-bottom: none;
+}
+
+.about-table__text span {
+  text-decoration: line-through #f54932;
+}
+
+.about-price__contacts {
+  font-family: "Golos Text", sans-serif;
+  font-size: 2rem;
+  color: #3057a2;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.about-price__contacts:hover {
+  color: #f54932;
+}
+
+
+/* -------------------------------- 1440px -------------------------------- */
+@media (max-width: 1441px) {
+  .about {
+    width: auto;
+  }
+}
+
+/* -------------------------------- 1024px -------------------------------- */
+@media (max-width: 1025px) {
+  .about {
+    padding-top: 3rem;
+    margin-bottom: 12rem;
+  }
+
+  .about-price__img {
+    width: 38.8vw;
+  }
+}
+
+/* -------------------------------- 768px -------------------------------- */
+@media (max-width: 769px) {
+  .about-price {
+    margin-left: -6rem;
+  }
+
+  .about-price__descr {
+    padding-left: 0;
+  }
+
+  .about__text,
+  .about-price__text {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .about-table__title,
+  .about-table__text {
+    width: 30rem;
+  }
+
+  .about-price__contacts {
+    font-size: 1.8rem;
+  }
+}
+
+/* -------------------------------- 425px -------------------------------- */
+@media (max-width: 426px) {
+  .about {
+    padding-top: 5rem;
+  }
+
+  .about__text,
+  .hide-375 {
+    display: none;
+  }
+
+  .display-375 {
+    display: block;
+  }
+
+  .about__text-mobile {
+    display: block;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    color: #313131;
+    line-height: 135%;
+  }
+
+  .about__text-mobile span {
+    color: #f54932;
+    font-weight: bold;
+    line-height: 135%;
+  }
+
+  .about__descr {
+    width: 33.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-bottom: 3.4rem;
+  }
+
+  .about__descr-img {
+    width: 33.5rem;
+    height: 21.256rem;
+    margin: 0;
+  }
+
+  .about-price {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .about-price__img {
+    height: 40.2rem;
+    width: 100vw;
+    margin-left: -2rem;
+  }
+
+  .about-price__text {
+    font-size: 2.8rem;
+    padding-top: 2.4rem;
+    margin-bottom: 4.3rem;
+  }
+
+  .about-table {
+    gap: 1.6rem;
+    margin-bottom: 3rem;
+  }
+
+  .about-table__item {
+    flex-direction: column;
+    border-bottom: 2px solid #d0d0d0;
+    gap: 1.2rem;
+    padding-bottom: 1.4rem;
+  }
+
+  .about-table__item:nth-child(3) {
+    flex-direction: row;
+  }
+
+  .about-table__item:nth-child(3) .about-table__text {
+    margin-left: -2.5rem;
+  }
+
+  .about-table__item:last-child {
+    border: none;
+  }
+
+  .about-table__title,
+  .about-table__text {
+    padding: 0;
+    border: none;
+    height: auto;
+  }
+
+  .about-table__text:last-child {
+    letter-spacing: 0.5px;
+  }
+}
+
+/* -------------------------------- 320px -------------------------------- */
+@media (max-width: 321px) {
+  .about__descr-img {
+    width: auto;
+    height: 19rem;
+  }
+}
